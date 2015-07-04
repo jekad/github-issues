@@ -1,0 +1,17 @@
+<div id="repo" ng-show="activeRepo">
+    <div class="user-info-wrap clearfix">
+        <img class="repo-logo" ng-src="{{activeRepo.owner.avatar_url}}" alt=""/>
+        <div class="user-info">
+            <h2>{{activeRepo.owner.login}}</h2>
+            <a ng-href="{{activeRepo.owner.url}}">{{activeRepo.html_url}}</a>
+        </div>
+    </div>
+
+    <ul class="issues">
+        <li ng-repeat="issue in activeRepo.issues">
+            <h5 class="issue-title">{{issue.title}}</h5>
+            <span ng-show="issue.number" class="issue-number">#{{issue.number}}</span>
+            <span ng-show="issue.created_at" class="issue-date">opened {{issue.created_at | date:'yyyy-MM-dd HH:mm'}}</span>
+        </li>
+    </ul>
+</div>

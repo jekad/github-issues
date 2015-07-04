@@ -1,0 +1,175 @@
+        /*   css reset   */
+ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,input,table,th,td{
+    margin: 0;
+    padding: 0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a img,:link img,:visited img{
+    border:none;
+}
+a:link, a:active, a:visited{
+    color: #4071b6;
+}
+body{
+    font-family: Verdana, Arial, sans-serif;
+    background: #343d46;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+        /*   search   */
+.search-label{
+    text-align: center;
+    color: #eee;
+    padding: 10px 0 20px;
+}
+.search-box{
+    margin: 100px auto;
+    width: 400px;
+    height: 50px;
+}
+.search-container{
+    width: 400px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.search-container input#search{
+    width: 300px;
+    height: 50px;
+    background: #2b303b;
+    border: none;
+    font-size: 18px;
+    float: left;
+    color: #63717f;
+    padding-left: 45px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+.search-container input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+.search-container input#search:-moz-placeholder { /* Firefox 18- */
+    color: #65737e;
+}
+.search-container input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #65737e;
+}
+.search-container input#search:-ms-input-placeholder {
+    color: #65737e;
+}
+.search-container input#submit{
+    width: 50px;
+    height: 50px;
+    color: #4f5b66;
+    font-weight: bold;
+    font-size: 18px;
+    background: #2b303b;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    outline: none;
+    cursor: pointer;
+}
+        /*   navigation   */
+.nav{
+    text-align: center;
+}
+.nav li{
+    display: inline-block;
+    margin: 0 10px;
+}
+.nav li a{
+    display: block;
+    padding: 10px 15px;
+    color: #eee;
+    background: #1D2C3A;
+    text-decoration: none;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+}
+.nav li a:hover{
+    background: #000;
+    color: #fff;
+}
+ul.menu-issues .menu-issues , ul.menu-details .menu-details{
+    text-decoration: underline;
+}
+.container{
+    max-width: 960px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+        /*   issues   */
+#repo .user-info{
+    float: left;
+}
+#repo .user-info h2{
+    font-size: 20px;
+    color: #eee;
+}
+#repo .repo-logo{
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+#repo .user-info a{
+    color: #61A1A3;
+}
+#repo, .details{
+    clear: both;
+    margin-top: 40px;
+}
+.issues li{
+    list-style-type: none;
+    padding: 15px 0;
+    border-top: 1px solid #ccc;
+}
+.issues li:first-child{
+    border-top: none;
+}
+.issue-number, .issue-date{
+    color: #666;
+    font-size: 14px;
+}
+.issue-title{
+    color: #eee;
+    font-size: 18px;
+    margin: 5px 0;
+}
+        /*   details   */
+.details .full-name{
+    font-size: 20px;
+    color: #eee;
+}
+.details .description{
+    font-size: 15px;
+    color: #eee;
+    margin-top: 20px;
+}
+.details .sub-title{
+    color: #eee;
+    font-size: 16px;
+    margin: 25px 0 15px;
+}
+.open-issues, .forks-count, .subscribe-count{
+    display: block;
+    color: #eee;
+    font-size: 15px;
+    margin: 5px 0;
+}
